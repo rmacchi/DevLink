@@ -30,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
   
 
   /* SHORTHAND background: color image repeat position/size */
@@ -171,4 +172,15 @@ footer {
   padding: 24px 0;
   font-size: 14px;
   text-align: center;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
