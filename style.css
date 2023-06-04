@@ -31,6 +31,7 @@ body {
   background-position: top center;
   background-size: cover;
   height: 100vh;
+  animation: entering 2s 
   
 
   /* SHORTHAND background: color image repeat position/size */
@@ -205,5 +206,16 @@ footer {
   }
   to {
     right: 0
+  }
+}
+
+@keyframes entering {
+  From {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  To {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
